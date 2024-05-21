@@ -1,0 +1,14 @@
+def is_alice_happy(x, y):
+    if x >= 2 * y:
+        return "Yes"
+    else:
+        return "No"
+
+# Taking input
+x, y = map(int, input().split())
+
+# Checking if Alice is happy
+result = is_alice_happy(x, y)
+
+# Printing the result
+print(result)
