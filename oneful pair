@@ -1,0 +1,12 @@
+# Function to check if a pair is a Oneful Pair
+def is_oneful_pair(a, b):
+    return a + b + (a * b) == 111
+
+# Input the pair of positive integers
+a, b = map(int, input().split())
+
+# Check if it's a Oneful Pair and print the result
+if is_oneful_pair(a, b):
+    print("Yes")
+else:
+    print("No")
