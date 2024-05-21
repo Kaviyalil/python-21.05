@@ -1,0 +1,13 @@
+def is_perfect_square(n):
+    sqrt = n ** 0.5
+    return sqrt.is_integer()
+
+def main():
+    num = int(input("Enter any integer: "))
+    if is_perfect_square(num):
+        print(num, "is a perfect square.")
+    else:
+        print(num, "is not a perfect square.")
+
+if __name__ == "__main__":
+    main()
