@@ -1,0 +1,16 @@
+def add_numbers(a, b):
+    return a + b
+
+# Taking input for the number of test cases
+t = int(input("Enter the number of test cases: "))
+
+# Iterating over each test case
+for _ in range(t):
+    # Taking input for A and B
+    a, b = map(int, input().split())
+    
+    # Calculating the sum
+    sum = add_numbers(a, b)
+    
+    # Printing the sum
+    print(sum)
