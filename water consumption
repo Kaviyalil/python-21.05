@@ -1,0 +1,20 @@
+# Function to determine if Chef drank enough water
+def did_chef_follow_advice(x):
+    if x >= 2000:
+        return "YES"
+    else:
+        return "NO"
+
+# Taking input for the number of test cases
+t = int(input())
+
+# Iterating over each test case
+for _ in range(t):
+    # Taking input for the amount of water Chef drank
+    x = int(input())
+    
+    # Checking if Chef followed the advice
+    result = did_chef_follow_advice(x)
+    
+    # Printing the result
+    print(result)
