@@ -1,14 +1,3 @@
-
-
-9 rectangle size
- = 5
-b = 4
-c = 5
-d = 4
-if a > 0 and b > 0 and c > 0 and d > 0:
-    if a == b and c == d:
-        print("A rectangle can be formed.")
-    else:
-        print("A rectangle cannot be formed.")
-else:
-    print("All sides must be positive to ")
+t = int(input())
+for i in range(t):
+    X = int(input())
