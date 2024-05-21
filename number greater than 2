@@ -1,0 +1,10 @@
+    if n < 100:
+        print("The number of digits should be greater than 2.")
+        return None
+    last_two_digits = n % 100
+    return last_two_digits
+
+    n = int(input("Enter an integer greater than 99: "))
+    last_two = extract_last_two_digits(n)
+    if last_two is not None:
+        print("The last two digits of", n, "are:", last_two)
