@@ -1,0 +1,16 @@
+def is_rectangle_possible(a, b, c, d):
+    sides = [a, b, c, d]
+    sides.sort()
+    return sides[0] == sides[1] and sides[2] == sides[3]
+
+def main():
+    sides = input("Enter rectangle four sides of length (separated by space): ").split()
+    a, b, c, d = map(int, sides)
+
+    if is_rectangle_possible(a, b, c, d):
+        print("A rectangle can be formed with the given sides.")
+    else:
+        print("A rectangle cannot be formed with the given sides.")
+
+if __name__ == "__main__":
+    main()
