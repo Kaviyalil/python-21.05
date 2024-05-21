@@ -1,0 +1,26 @@
+def prime_factors_product(n):
+    # Initialize product to 1
+    product = 1
+    
+    # Start with the smallest prime factor, 2
+    divisor = 2
+    
+    # Loop until the number is greater than 1
+    while n > 1:
+        # If n is divisible by the current divisor
+        if n % divisor == 0:
+            # Multiply the product by the divisor
+            product *= divisor
+            
+            # Divide n by the divisor as many times as possible
+            while n % divisor == 0:
+                n //= divisor
+        
+        # Move to the next potential divisor
+        divisor += 1
+        
+    return product
+
+# Sample input
+n = 36
+print("Product of unique prime factors of", n, ":", prime_factors_product(n))
