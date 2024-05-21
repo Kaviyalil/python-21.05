@@ -1,0 +1,16 @@
+# Function to determine if the turn was good
+def is_good_turn(x, y):
+    if x + y > 6:
+        return "YES"
+    else:
+        return "NO"
+
+# Taking input for the number of test cases
+t = int(input())
+
+# Iterating over each test case
+for _ in range(t):
+    # Taking input for Chef's and Chefina's dice rolls
+    x, y = map(int, input().split())
+    
+ 
