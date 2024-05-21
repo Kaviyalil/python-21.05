@@ -1,0 +1,17 @@
+def time_to_coincide(hours):
+    # Calculate the angle swept by hour and minute hands per minute
+    hour_hand_angle_per_minute = 0.5  # Hour hand moves 0.5 degrees per minute
+    minute_hand_angle_per_minute = 6  # Minute hand moves 6 degrees per minute
+    angle_difference = abs(hour_hand_angle_per_minute - minute_hand_angle_per_minute)
+
+    time_to_coincide = (360 / angle_difference) * 60  # Convert to minutes
+
+    return time_to_coincide
+
+def main():
+    hours = int(input("Enter time in hours: "))
+    time_in_minutes = time_to_coincide(hours)
+    print("Time in minutes at which the minute hand and hour hand coincide in the next one hour:", time_in_minutes)
+
+if __name__ == "__main__":
+    main()
