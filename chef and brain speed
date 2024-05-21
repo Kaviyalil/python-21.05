@@ -1,0 +1,13 @@
+def prone_to_errors(threshold, rate):
+    if rate > threshold:
+        return "YES"
+    else:
+        return "NO"
+
+def main():
+    threshold, rate = map(int, input().split())
+    result = prone_to_errors(threshold, rate)
+    print(result)
+
+if __name__ == "__main__":
+    main()
