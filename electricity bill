@@ -1,0 +1,29 @@
+def calculate_bill(units):
+    if units <= 199:
+        rate_per_unit = 1.20
+    elif units < 400:
+        rate_per_unit = 1.50
+    elif units < 600:
+        rate_per_unit = 1.80
+    else:
+        rate_per_unit = 2.00
+
+    total_amount = units * rate_per_unit
+
+    # Apply surcharge if bill exceeds Rs. 400
+    if total_amount > 400:
+        surcharge = total_amount * 0.15
+        total_amount += surcharge
+
+    # Minimum bill should be Rs. 100
+    total_amount = max(total_amount, 100)
+
+    return total_amount
+
+def main():
+    units_consumed = int(input("Enter the units consumed: "))
+    bill_amount = calculate_bill(units_consumed)
+    print("Total amount to be paid: Rs.", bill_amount)
+
+if __name__ == "__main__":
+    main()
